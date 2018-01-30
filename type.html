@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择圈主类型</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/type.css">
+</head>
+<body>
+<div class="wrap">
+    <!--顶部-->
+    <div class="top">
+        <img src="images/logo.png" alt="值道logo">
+        <p>创造沉淀的价值</p>
+        <span class="user_out">退出</span>
+    </div>
+    <hr>
+    <!--内容-->
+    <div class="content">
+    	<!--步骤-->
+        <div class="step">
+            <dl>
+                <dt>1</dt>
+                <dd>选择圈主类型</dd>
+            </dl>
+            <span></span>
+            <dl>
+                <dt>2</dt>
+                <dd>填写值道号信息</dd>
+            </dl>
+            <span></span>
+            <dl>
+                <dt>3</dt>
+                <dd>填写圈主信息</dd>
+            </dl>
+        </div>
+        <!--填写值道号信息-->
+        <div class="title">选择圈主类型</div>
+        <p class="title_tips">账号一旦注册成功，圈主类型不可更改</p>
+        <div class="info_list">
+            <ol>
+                <li>
+                    <img src="images/Group%209.png" height="60" width="50"/>
+                    <p>个人</p>
+                    <p>适合个人财经评论家、<br/>金融各细分领域分析师</p>
+                    <span><p>注册所需资料</p></span>
+                    <ul>
+                        <li>圈主身份证</li>
+                        <li>圈主自拍照</li>
+                    </ul>
+                    <input type="button" value="选择" onclick="location.href = 'personal_zd.html';">
+                </li>
+                <li><img src="images/Group%203.png" height="60" width="57"/>
+                    <p>个人媒体</p>
+                    <p>适合个人媒体创作者<br/>以及自媒体创作者</p>
+                    <span><p>注册所需资料</p></span>
+                    <ul>
+                        <li>圈主身份证</li>
+                        <li>圈主自拍照</li>
+                    </ul>
+                    <input type="button" value="选择" onclick="location.href = 'media_zd.html';"></li>
+                <li><img src="images/Group%2012.png" height="60" width="72"/>
+                    <p>群媒体</p>
+                    <p>以公司形式专注于生<br/>产的小型创作团体</p>
+                    <span><p>注册所需资料</p></span>
+                    <ul>
+                        <li style="width: 112px">组织机构代码证</li>
+                        <li style="width: 96px">确认书扫描件</li>
+                        <li>圈主身份证</li>
+                        <li>圈主自拍照</li>
+                    </ul>
+                    <input style="margin-top: 30px" type="button" value="选择" onclick="location.href = 'group_zd.html';"></li>
+                <li><img src="images/Group%206.png" height="60" width="60"/>
+                    <p>企业</p>
+                    <p>适合金融企业、企业<br/>分支机构、企业相关<br/>品牌、MCN等</p>
+                    <span style="margin-top: 31px;"><p>注册所需资料</p></span>
+                    <ul>
+                        <li style="width: 96px">企业营业执照</li>
+                        <li style="width: 96px">确认书扫描件</li>
+                        <li>圈主身份证</li>
+                        <li>圈主自拍照</li>
+                    </ul>
+                    <input style="margin-top: 30px" type="button" value="选择" onclick="location.href = 'enterprise_zd.html';"></li>
+            </ol>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    // //阻止图片拖动
+    document.addEventListener("dragstart", function (ev) {
+        ev.preventDefault();
+    }, false);
+</script>
+</html>
