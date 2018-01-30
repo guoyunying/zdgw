@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>填写值道号信息群媒</title>
+   	<link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/group_zd.css">
+</head>
+<body>
+<div class="wrap">
+    <!--顶部-->
+    <div class="top">
+        <img src="images/logo.png" alt="值道logo">
+        <p>创造沉淀的价值</p>
+        <span class="user_out">退出</span>
+    </div>
+    <hr>
+    <!--内容-->
+    <div class="content">
+        <div class="step">
+            <dl>
+                <dt>1</dt>
+                <dd>选择圈主类型</dd>
+            </dl>
+            <span></span>
+            <dl>
+                <dt>2</dt>
+                <dd>填写值道号信息</dd>
+            </dl>
+            <span></span>
+            <dl>
+                <dt>3</dt>
+                <dd>填写圈主信息</dd>
+            </dl>
+        </div>
+        <!--标题-->
+        <div class="title_name">填写值道号信息</div>
+        <hr class="title_br">
+        <!--填写值道号信息表单-->
+        <div class="group_zd">
+            <div class="form_name">
+                <p class="zhidao">值道号名称</p>
+                <input class="zhidao_ipt" type="text" placeholder="值道号名称">
+                <p class="zhidao_num">5/10</p>
+                <p class="zhidao_tip1 tips">值道号名称不能超过10个汉字或20个字符</p>
+                <p class="zhidao_tip2 tips">值道号名称不能小于2个汉字或4个字符</p>
+                <p class="zhidao_tips">输入您的值道号名称（2-10个字，请勿使用含特殊符号或含有明显营销推广意图的名称）</p>
+            </div>
+            <div class="form_introduce">
+                <p class="zhidao_introduce">值道号介绍</p>
+                <textarea class="introduce_ipt"></textarea>
+                <p class="introduce_num">0/300</p>
+                <p class="introduce_tip1 tips">值道号介绍不能超过300个汉字或600个字符</p>
+                <p class="introduce_tip2 tips">值道号介绍不能小于10个汉字或20个字符</p>
+                <p class="introduce_tips">值道号介绍（10-300个字，要求内容完整通顺，无特殊符号，请勿添加任何联系方式如 微博、手机号、QQ、微信号等）</p>
+            </div>
+            <div class="picture">
+                <p class="zhidao_head">值道号头像</p>
+                <div id="zd_head" class="img_wrap">
+                	<img src="images/plus.png" alt="头像上传" id='zd_head_img' onclick="$('#zd_head_up').click();">
+                </div>
+                <input id="zd_head_up" class="img_up" type="file" accept="image/jpeg,image/png">
+                <p class="picture_tips">上传您的值道头像（要求清晰、健康、代表品牌形象，切勿使用二维码）</p>
+            </div>
+            <div class="address">
+                <p class="address_title">所在地</p>
+                <select id="Country">
+                    <option value="海外">海外</option>
+                    <option value="中国">中国</option>
+                </select>
+                <select id="province">
+                    <option value="省份/直辖市">省份/直辖市</option>
+                    <option value="北京市">北京市</option>
+                    <option value="上海市">上海市</option>
+                    <option value="天津市">天津市</option>
+                    <option value="重庆市">重庆市</option>
+                    <option value="河北省">河北省</option>
+                    <option value="山西省">山西省</option>
+                    <option value="辽宁省">辽宁省</option>
+                    <option value="吉林省">吉林省</option>
+                    <option value="黑龙江省">黑龙江省</option>
+                    <option value="江苏省">江苏省</option>
+                    <option value="浙江省">浙江省</option>
+                    <option value="安徽省">安徽省</option>
+                    <option value="福建省">福建省</option>
+                    <option value="江西省">江西省</option>
+                    <option value="山东省">山东省</option>
+                    <option value="河南省">河南省</option>
+                    <option value="湖北省">湖北省</option>
+                    <option value="湖南省">湖南省</option>
+                    <option value="广东省">广东省</option>
+                    <option value="海南省">海南省</option>
+                    <option value="四川省">四川省</option>
+                    <option value="贵州省">贵州省</option>
+                    <option value="云南省">云南省</option>
+                    <option value="陕西省">陕西省</option>
+                    <option value="甘肃省">甘肃省</option>
+                    <option value="青海省">青海省</option>
+                    <option value="内蒙古自治区">内蒙古自治区</option>
+                    <option value="广西壮族自治区">广西壮族自治区</option>
+                    <option value="西藏自治区">西藏自治区</option>
+                    <option value="宁夏回族自治区">宁夏回族自治区</option>
+                    <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+                    <option value="台湾">台湾</option>
+                    <option value="香港">香港</option>
+                    <option value="澳门">澳门</option>
+                </select>
+                <select id="City">
+                    <option value="市/区">市/区</option>
+                </select>
+            </div>
+            <div class="auxiliary">
+                <p class="auxiliary_title">辅助材料</p>
+                <textarea class="auxiliary_ipt"></textarea>
+                <p class="auxiliary_num">0/300</p>
+                <p class="auxiliary_tip1 tips">值道号介绍不能超过300个汉字或600个字符</p>
+                <p class="auxiliary_tip2 tips">值道号介绍不能小于10个汉字或20个字符</p>
+                <p class="auxiliary_tips">辅助材料（10-300个字，请提供属于贵媒体的专栏、博客或微信公众号等链接，我们会以您提供的文章作为参考依据，审核您申请的账号）</p>
+            </div>
+            <div class="btn">
+                <input id="top_step" type="button" value="上一步">
+                <input id="down_step" type="button" value="下一步">
+            </div>
+        </div>
+       	<!--圈主-->
+       	<div class="group_master">
+       		<div class="master">
+	            <!--组织名字-->
+	            <div class="idcard_name">
+	                <label for="organization_ipt">组织名称</label>
+	                <input id="organization_ipt" type="text">
+	                <p>请与组织机构代码证或营业执照名称一致</p>
+	            </div>
+	            <!--组织机构-->
+	            <div class="idcard_img">
+	                <label style="height: 42px;" for="">组织机构代码<br/>证书/营业执照</label>
+	                <div id="license_wrap" class="img_wrap">
+	                	<img src="images/plus.png" id='license_img' onclick="$('#license_up').click();">
+	                </div>
+	                <input id="license_up" class="img_up" type="file" accept="image/jpeg,image/png">
+	                
+	                <p style="margin-top: 60px">请上传清晰照片或扫描件，大小不得超过2M(再次点击替换上传图片)</p>
+	            </div>
+	            <!--扫描-->
+	            <div class="Selfie">
+	                <label for="">确认书扫描件</label>
+	                <a href="" download="" class="img_wrap"><img class="Selfie1" id="Confirmation_img" src="images/Group%2041.png" height="106" width="106"/></a>
+	                <div id="confirmate_wrap" class="img_wrap" style="left: 270px;">
+	                	<img src="images/plus.png" id='confirmate_img' onclick="$('#confirmate_up').click();">
+	                </div>
+	                <input id="confirmate_up" class="img_up" type="file" accept="image/jpeg,image/png">
+	                <p>点击此处下载确认书模板，填写后请上传清晰照片或扫描件，大小不得超过2M(再次点击替 换上传图片)</p>
+	            </div>
+	        </div>
+	        <!--填写值道号信息-->
+	        <div class="title">填写申请人信息</div>
+	    	<hr class="title_br">
+	        <!--圈主信息-->
+	        <div class="master">
+	            <!--网站-->
+	            <div class="website">
+	                <label for="web">网站</label>
+	                <input id="web" type="text">
+	            </div>
+	            <!--身份证名字-->
+	            <div class="idcard_name" style="margin-top: 40px;">
+	                <label for="ID_card_name">申请人姓名</label>
+	                <input id="ID_card_name" type="text">
+	                <p>注册成功后身份不可修改</p>
+	            </div>
+	            <!--身份证号码-->
+	            <div class="idcard_num">
+	                <label for="ID_card_num">申请人身份证号码</label>
+	                <input id="ID_card_num" type="text">
+	                <p class="idCard_tip tips">身份证号码有误</p>
+	            </div>
+	            <!--身份证照片-->
+	            <div class="idcard_img">
+	                <label for="">申请人身份证正 面照片<br/>（头像面）</label>
+	                <div id="IDcard_wrap" class="img_wrap">
+	                	<img src="images/plus.png" id='IDcard_img' onclick="$('#IDcard_up').click();">
+	                </div>
+	                <input id="IDcard_up" class="img_up" type="file" accept="image/jpeg,image/png">
+	                <img style="margin-left: 154px;" src="images/Group%2020.png" height="106" width="141"/>
+	                <p>请上传本人身份证照片，要求身份证边框完整、图像清晰，照片大小不超过5M</p>
+	            </div>
+	            <!--自拍照-->
+	            <div class="Selfie">
+	                <label for="">申请人自拍照</label>
+	                <div id="Selfie_wrap" class="img_wrap">
+	                	<img src="images/plus.png" id='Selfie_img' onclick="$('#Selfie_up').click();">
+	                </div>
+	                <input id="Selfie_up" class="img_up" type="file" accept="image/jpeg,image/png">
+	                <p>请上传自拍照片且脸部清晰可见，确保自拍照与身份证照为同一人</p>
+	            </div>
+	            <!--邮箱-->
+	            <div class="email">
+	                <label for="Contact_mail">申请人联系邮箱</label>
+	                <input id="Contact_mail" type="text">
+	                <p class="email_tip tips">邮箱有误</p>
+	                <p class="email_tips">请填写本人常用邮箱，以便及时接收信息及通知</p>
+	            </div>
+	            <!--按钮-->
+	            <div class="submit">
+	                <input id="up_step" type="button" value="上一步">
+	                <input id="submit" type="button" value='提交'>
+	            </div>
+	        </div>
+       	</div>
+        
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/common.js" ></script>
+<script type="text/javascript" src="js/group_zd.js" ></script>
+</html>

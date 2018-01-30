@@ -1,0 +1,98 @@
+@mcolor : #3DAEA9;
+
+.step{
+    dl:nth-child(1) dt{
+        border: 2px solid @mcolor;
+        color: @mcolor;
+    }
+    dl:nth-child(1) dd{
+        color: #333;
+    }
+}
+
+.content {
+    .title {
+        height: 31px;
+        font-size: 24px; 
+        text-align: center;
+        line-height: 31px;
+        margin: 60px auto 0;
+    }
+  .title_tips {
+    height: 24px;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+  .info_list {
+    width: 907px;
+    height: 592px;
+    margin: 100px auto 4px;
+    ol {
+        overflow: hidden;
+      li {
+        width: 226px;
+        height: 541px;
+        border-left: 1px solid #C9C9C9;
+        float: left;
+        text-align: center;
+        p:nth-child(2) {
+          margin-top: 60px;
+          font-size: 20px;
+        }
+        p:nth-child(3) {
+          margin-top: 30px;
+          color: #999999;
+        }
+        span {
+          display: block;
+          margin: 51px auto 0;
+          height: 52px;
+          width: 146px;
+          border-top: 1px dashed;
+          border-bottom: 1px dashed;
+          p {
+            font-size: 14px;
+            line-height: 52px;
+            color: #333;
+            font-weight: lighter;
+          }
+        }
+        ul {
+          display: block;
+          width: 80px;
+          margin: 20px auto 0;
+          color: #333;
+          li {
+            border-left: none;
+            margin: 10px auto 0;
+            clear: both;
+            width: 80px;
+            height: 21px;
+            list-style: disc;
+          }
+        }
+        input {
+          width: 106px;
+          height: 46px;
+          background-color: @mcolor;
+          border-radius: 2px;
+          border: none;
+          text-align: center;
+          color: white;
+          margin-top: 92px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+        input:hover{
+          background: #21918C;
+        }
+        input:focus{
+          background: #21918C;
+        }
+      }
+      li:nth-child(1) {
+        border-left: none;
+      }
+    }
+  }
+}
